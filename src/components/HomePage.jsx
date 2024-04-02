@@ -4,11 +4,16 @@ import { commodity_data, stock_data } from "../constants";
 import Testimonials from "./Testimonials";
 
 const HomePage = () => {
+
+  const handleClickLink = () => {
+    
+  }
+
   return (
     <>
       <div className={`flex md:flex-col flex-col md:px-[33rem] px-[1rem]`}>
         <div className={`flex-col`}>
-          <div className="flex flex-col sm:flex-row p-4">
+          <div className="flex flex-col sm:flex-row pt-4">
             <div className="md:w-[0%] w-[100%] flex">
               <img
                 src={logo}
@@ -60,23 +65,23 @@ const HomePage = () => {
                       </span>
                     </div>
 
-                    <div className="w-[140px] h-[32px] flex items-center justify-center rounded-[21.5px] border-[0.67px] bg-[#0081F1] border-solid border-[#0081F1] mt-2 md:mt-0">
+                    <button onClick = { handleClickLink } className="w-[140px] h-[32px] flex items-center justify-center rounded-[21.5px] border-[0.67px] bg-[#0081F1] border-solid border-[#0081F1] mt-2 md:mt-0">
                       <div className="flex justify-center items-center gap-2">
                         <img
                           src={commodity.telegramIcon}
                           alt="Telegram"
                           className="w-[16px] h-[16px]"
                         />
-                        <button className="text-lightWhite flex items-center font-[400] text-[10px] leading-[19px] w-[73px] h-[13px]">
+                        <span className="text-lightWhite flex items-center font-[400] text-[10px] leading-[19px] w-[73px] h-[13px]">
                           {commodity.joinBtn}
-                        </button>
+                        </span>
                         <img
                           src={commodity.arrow}
                           alt="arrow"
                           className="w-[11px] h-[11px]"
                         />
                       </div>
-                    </div>
+                    </button>
                   </div>
                 </div>
               );
