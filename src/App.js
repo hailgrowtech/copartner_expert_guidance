@@ -5,7 +5,6 @@ function App() {
   return (
     <div className="bg-[#06030E] overflow-hidden">
       <HomePage />
-      {/* <HomePageTwo /> */}
     </div>
   );
 }
