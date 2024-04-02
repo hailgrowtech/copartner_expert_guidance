@@ -22,6 +22,7 @@ import img5 from './image5.png';
 import img6 from './image6.png';
 import img7 from './image7.png';
 import img8 from './image8.png';
+import tick from './Vector.png'
 
 export {
     logo,
@@ -47,5 +48,6 @@ export {
     img5,
     img6,
     img7,
-    img8
+    img8, 
+    tick
 }
